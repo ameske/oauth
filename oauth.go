@@ -90,7 +90,8 @@ func (h *oauthHeader) String() string {
 		percentEncode(h.Version))
 }
 
-func (config Config) Sign(req *http.Request, header *oauthHeader) error {
+func (config Config) Sign(req *http.Request) error {
+	header := config.header()
 	params, err := sortedOauthParameters(req, header)
 	if err != nil {
 		return err

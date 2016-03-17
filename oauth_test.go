@@ -13,7 +13,7 @@ var expectedSignature = "tnnArxj06cWHq44gCs1OSKk/jLY="
 
 var testRequest *http.Request
 
-var testConfig = OAuthConfig{
+var testConfig = Config{
 	ConsumerKey:       "xvz1evFS4wEEPTGEFPHBog",
 	ConsumerSecret:    "kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw",
 	AccessToken:       "370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb",
